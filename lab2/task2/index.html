@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="phone-mockup" aria-hidden="true">
+      <img src="https://via.placeholder.com/380x600" alt="Phone mockup" />
+    </section>
+
+    <section class="auth-card">
+      <div class="card">
+        <h1 class="logo">Instagram</h1>
+
+        <form>
+          <div class="form-group">
+            <label for="email">Phone number, username, or email</label>
+            <input type="text" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+
+          <button type="submit" class="btn-primary">Log in</button>
+        </form>
+
+        <div class="divider">
+          <span>OR</span>
+        </div>
+
+        <button class="btn-facebook">Log in with Facebook</button>
+        <a href="#" class="forgot">Forgot password?</a>
+      </div>
+
+      <div class="signup-card">
+        <p>Don’t have an account? <a href="#">Sign up</a></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
