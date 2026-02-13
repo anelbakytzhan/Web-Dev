@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter 2 — Statements</title>
+</head>
+
+<body>
+
+<script>
+  // ----- Basic statements -----
+
+  alert('Hello');
+  alert('World');
+
+  // ----- Statements without semicolons (still works) -----
+
+  alert('Hello')
+  alert('World')
+
+  // ----- Multiline expression (no semicolon inserted) -----
+
+  alert(3 +
+        1 +
+        2);  // Outputs: 6
+
+  // ----- Example where missing semicolon causes an error -----
+
+  alert("Hello");
+
+  [1, 2].forEach(alert);
+
+  // If we remove the semicolon above, JavaScript may break the code:
+  /*
+  alert("Hello")
+  [1, 2].forEach(alert);
+  */
+
+  // ----- One-line comment -----
+  alert('This is after a single-line comment');
+
+  /* ----- Multi-line comment -----
+     The code below will NOT run
+     because it is commented out.
+  */
+  /*
+  alert('This will not show');
+  */
+
+  alert('End of demo');
+
+</script>
+
+</body>
+</html>
