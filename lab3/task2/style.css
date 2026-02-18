@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+/* Header */
+.header {
+  background-color: #000000d6;
+  padding: 21px 80px;
+}
+
+.header-title {
+  color: #7a7373;
+  font-size: 23px;
+  font-weight: normal;
+}
+
+/* Layout */
+.main {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+}
+
+.todo-section {
+  width: 900px; /* wider so items align with Add button */
+}
+
+.main-title {
+  font-size: 36px;
+  font-weight: normal; /* NOT bold */
+  margin-bottom: 30px;
+}
+
+/* Form */
+.todo-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  
+}
+
+/* small indent before input */
+.task-input {
+  flex: 1;
+  margin-left: 60px; /* indent */
+  padding: 11px 14px;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.add-button {
+  margin-left: 15px;
+  padding: 11px 24px;
+  border: none;
+  border-radius: 6px;
+  background-color: #3b82f6;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #2563eb;
+}
+
+/* List */
+.todo-list {
+  list-style: none;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 30px 25px; /* wider lines */
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  margin-right: 38px; /* bigger distance between tick and text */
+  accent-color: #3b82f6; 
+}
+
+.task-text {
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+}
+
+.task-text.done {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Red trash */
+.delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.delete-button img {
+  width: 18px;
+  height: 18px;
+  filter: invert(16%) sepia(96%) saturate(7500%) hue-rotate(0deg) brightness(90%) contrast(115%);
+}
